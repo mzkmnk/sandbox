@@ -17,7 +17,6 @@ export type TPost = {
     <h1>Tan Stack query</h1>
 
     @let posts = query.data();
-    @let error = query.error;
 
     @if(typeof posts !== 'undefined'){
       @for(post of posts; let i = $index; track i){

@@ -10,6 +10,10 @@ export const routes: Routes = [
     loadComponent:() => import('./pages/linked-signal.component').then((M) => M.LinkedSignalComponent),
   },
   {
+    path:'effect-lifecycle',
+    loadComponent:() => import('./pages/effect-lifecycle.component').then((M) => M.EffectLifecycleComponent),
+  },
+  {
     path:'**',
     redirectTo: 'tan-stack',
   }
